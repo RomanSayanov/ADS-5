@@ -3,6 +3,16 @@
 #include <map>
 #include <stack>
 
+int check(char i) {
+    if (i == '/' || i == '*') {
+        return 3;
+    } else if (i == '+' || i == '-') {
+        return 2;
+    } else {
+        return 1;
+    }
+}
+
 std::string infx2pstfx(std::string s) {
     std::string st = "";
     std::stack<char> Stack;
