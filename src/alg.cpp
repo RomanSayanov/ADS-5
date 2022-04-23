@@ -1,7 +1,7 @@
 // Copyright 2021 NNTU-CS
 #include <string>
 #include <map>
-#include "tstack.h"
+#include <stack>
 
 std::string infx2pstfx(std::string s) {
     std::string st = "";
