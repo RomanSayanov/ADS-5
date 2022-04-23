@@ -3,7 +3,7 @@
 #include <map>
 #include "tstack.h"
 
-std::string infx2pstfx(std::string inf) {
+std::string infx2pstfx(std::string s) {
     std::string st = "";
     std::stack<char> Stack;
     for (int i = 0; i < s.length(); i++) {
@@ -48,7 +48,7 @@ std::string infx2pstfx(std::string inf) {
     return st;
 }
 
-int eval(std::string pref) {
+int eval(std::string s) {
     std::string p;
     std::stack<int> Stack;
     for (int i = 0; i < s.length(); ++i) {
